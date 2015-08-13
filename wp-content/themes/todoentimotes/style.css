@@ -12,7 +12,7 @@ Version: 1.0
  Todo en Timotes 
 */
 
-/*=== GENERAL ===*/
+/*=== GENERAL === */
 
 
 
@@ -47,6 +47,10 @@ input[type=submit]{
 	font-weight: bold;
 }
 
+ul {
+	list-style: none;
+	padding: 0px;
+}
 /*=== FIN GENERAL ===*/
 
 /*=== HEADER ===*/
@@ -138,6 +142,60 @@ section.main{
 }
 
 /*=== FIN HOME ===*/
+
+/*inicio del contacto*/
+
+.contact-form{
+	margin-top: 50px;
+}
+
+.contact-form input{
+	width: 100%;
+	padding: 10px;
+	border:1px solid #d8d8d8;
+	border-radius: 5px; 
+}
+
+.contact-form textarea{
+	width: 100%;
+	resize:none;
+	height: 300px;
+	border:1px solid #d8d8d8;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.contact-form p{
+	margin-bottom: 30px;
+}
+
+.contact-form ::-moz-placeholder{
+	color: #17B45B;
+	font-size: 18px;
+}
+
+.contact-form :moz-placeholder{
+	color: #17B45B;
+	font-size: 18px;
+}
+
+.contact-form :-ms-placeholder{
+	color: #17B45B;
+	font-size: 18px;
+} 
+
+.contact-form ::-webkit-input-placeholder{
+	color: #17B45B;
+	font-size: 18px;
+} 
+
+.redes_sociales li{
+	float: none;
+	display: inline-block;
+	padding: 15px;
+}
+
+/*fin del contacto*/
 
 .credits{
 	margin-top: 30px;
