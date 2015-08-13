@@ -1,8 +1,144 @@
 /*
-Theme Name: Todo En Timotes
-Theme URI:http://todoentimotes.com.ve
+Theme Name:   Todo en Timotes
+Theme URI: http://todoentimotes.com.ve
 Author: Jesus Morales
 Author URI: http://todoentimotes.com.ve
-Description: todo en timotes
+Desciption: todo en Timotes
+Template: twentytwelve
 Version: 1.0
 */
+
+/*
+ Todo en Timotes 
+*/
+
+/*=== GENERAL ===*/
+
+
+
+body{
+	font-family: 'Josefin Sans', sans-serif;	
+	background: #fff;
+	font-size: 16px;
+}
+
+a{
+	color: #17B45B;
+}
+
+a:hover{
+	color: #17B45B;
+	text-decoration: underline;
+}
+
+a:active, a:focus{
+	outline: 0;
+}
+
+.btn-green,
+button,
+input[type=submit]{
+	padding: 5px 10px;
+	background: #17B45B;
+	border-radius: 5px;
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	font-weight: bold;
+}
+
+/*=== FIN GENERAL ===*/
+
+/*=== HEADER ===*/
+
+header{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 15px;
+	font-size: 16px;
+}
+
+.logo{
+	padding-bottom: 15px;
+}
+
+.custom-search-form input[type=search]{
+	padding: 5px 10px;
+	border: none;
+	border-bottom: 1px solid #232323;
+	margin-right: 15px;
+}
+
+nav.menu-top{
+	text-transform: uppercase;
+	text-align: right;
+}
+
+nav.menu-top ul{
+	list-style: none;
+	margin-top: 35px;
+}
+
+nav.menu-top ul li{
+	display: inline-block;
+	padding: 0 10px;
+}
+
+nav.menu-top ul li:last-child{
+	padding-right: 0;
+}
+
+nav.cat-menu{
+	background: transparent;
+	border: none;
+	margin: 0;
+}
+
+nav.cat-menu ul li{
+	background: #232323;
+	margin-right: 2px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+nav.cat-menu ul li:hover{
+	background: #17B45B;
+}
+
+nav.cat-menu ul li:last-child{
+	margin-right: 0;	
+}
+
+nav.cat-menu ul li a{
+	color: #fff !important;
+	font-weight: bold;
+}
+
+/*=== FIN HEADER ===*/
+
+/*=== MAIN ===*/
+
+section.main{
+	padding: 15px;
+	box-shadow: 0px 0px 10px #888888;
+}
+
+/*=== FIN MAIN ===*/
+
+/*=== HOME ===*/
+
+.content-slide-home{
+	
+}
+
+.category-home-img,
+.category-home-info{
+	width: 50%;
+	float: left;
+}
+
+/*=== FIN HOME ===*/
+
+.credits{
+	margin-top: 30px;
+}

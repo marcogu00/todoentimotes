@@ -1,7 +1,11 @@
-	
+			<footer>
+				
+			</footer>
+		</div>
 	</section>
-	<footer>
-		
-	</footer>	
+	<div class="text-center credits">
+		<?php echo date('Y'); ?> TodoEnTiomtes.com.ve todos los derechos reservados.		
+	</div>
+<?php wp_footer() ?>
 </body>
 </html>
