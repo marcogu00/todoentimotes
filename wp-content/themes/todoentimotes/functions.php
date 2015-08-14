@@ -62,4 +62,27 @@ function grid_categories($number, $post_type) {
 
 }
 
+function contact_email(){
+  $nombre = $_POST['nombre'];
+  $email = $_POST['email'];
+  $mensaje = $_POST['mensaje'];
+  
+}
+
+add_action( 'init', 'create_post_type_event' );
+
+function create_post_type_event() {
+    register_post_type( 'evento',
+    array(
+      'labels' => array(
+        'name' => __( 'Eventos' ),
+        'singular_name' => __( 'Evento' )
+      ),
+        'public' => true,
+        'rewrite' => array('slug' => 'evento'),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'sticky-posts' ),
+    )
+  );
+}
+
 ?>

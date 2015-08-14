@@ -51,6 +51,19 @@ ul {
 	list-style: none;
 	padding: 0px;
 }
+
+input:focus, textarea {
+	outline:0;
+}
+
+input:focus:required:invalid, input:invalid {
+border:	1px solid #B70248;
+}
+
+input:focus:required:valid, input:valid {
+	border: 1px solid #17B45B;
+}
+
 /*=== FIN GENERAL ===*/
 
 /*=== HEADER ===*/
@@ -152,7 +165,7 @@ section.main{
 .contact-form input{
 	width: 100%;
 	padding: 10px;
-	border:1px solid #d8d8d8;
+	border:1px solid #acacac;
 	border-radius: 5px; 
 }
 
@@ -160,7 +173,7 @@ section.main{
 	width: 100%;
 	resize:none;
 	height: 300px;
-	border:1px solid #d8d8d8;
+	border:1px solid #acacac;
 	border-radius: 5px;
 	padding: 10px;
 }
@@ -196,6 +209,14 @@ section.main{
 }
 
 /*fin del contacto*/
+
+/*eventos*/
+
+.evento small{
+	float: right;
+}
+
+/*fin de eventos*/
 
 .credits{
 	margin-top: 30px;

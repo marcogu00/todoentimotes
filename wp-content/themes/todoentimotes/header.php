@@ -12,6 +12,11 @@
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/libs/jquery.bxslider/jquery.bxslider.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/libs/jquery.bxslider/jquery.bxslider.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/libs/hovermaster/hover.css">
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/libs/animate.css">
+	<script src="<?php bloginfo('stylesheet_directory'); ?>/libs/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<script>
 		$('.home-slider').bxSlider({
 		  mode: 'fade',
