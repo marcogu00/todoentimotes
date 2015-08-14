@@ -1,6 +1,7 @@
 <?php 
 register_nav_menus(	array('menutop' => 'Menu Top'));
 register_nav_menus( array('menuprincipal' => 'Categories Menu'));
+register_nav_menus( array('menuresponsive' => 'Responsive Menu'));
 
 function custom_search_form(){
 	?>

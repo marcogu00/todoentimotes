@@ -131,7 +131,33 @@ nav.cat-menu ul li a{
 	font-weight: bold;
 }
 
+
 /*=== FIN HEADER ===*/
+
+/*=== HEADRE RESPONSIVE ===*/
+
+header.header-responsive{
+	
+}
+
+.responsive-menu{
+	background: #fff;
+	border-bottom: 5px solid #17B45B;
+}
+
+.navbar-brand{
+	padding: 5px;
+	height: 70px;
+}
+
+.navbar-brand img{
+	height: 100%;
+}
+
+
+
+
+/*=== FIN HEADRE RESPONSIVE ===*/
 
 /*=== MAIN ===*/
 
@@ -220,4 +246,18 @@ section.main{
 
 .credits{
 	margin-top: 30px;
+}
+
+
+@media screen and (max-width: 767px){
+
+	header.header-responsive{
+		display: block;
+	}
+
+
+
+	section.main{
+		padding-top: 60px;
+	}
 }
