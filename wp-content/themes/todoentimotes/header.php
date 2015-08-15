@@ -85,8 +85,8 @@
 			</div>				
 		</div>
 	</header>
-	<header class="header-responsive">
-		<nav class="nabvar navbar-default navbar-fixed-top responsive-menu" role="navigation">
+	<header class="header-responsive navbar-fixed-top">
+		<nav class="container nabvar navbar-default responsive-menu" role="navigation">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
 				    <span class="icon-bar"></span>

@@ -2,7 +2,7 @@
 register_nav_menus(	array('menutop' => 'Menu Top'));
 register_nav_menus( array('menuprincipal' => 'Categories Menu'));
 register_nav_menus( array('menuresponsive' => 'Responsive Menu'));
-
+add_theme_support('post-thumbnails');
 function custom_search_form(){
 	?>
 	<form role="search" method="get" class="custom-search-form" action="<?php echo home_url( '/' ); ?>">
@@ -25,7 +25,7 @@ function create_post_type() {
       	'public' => true,
       	'has_archive' => true,
       	'rewrite' => array('slug' => 'publicacion'),
-      	'supports' => array( 'title', 'editor', 'thumbnail', 'sticky-posts' ),
+      	'supports' => array( 'title', 'editor', 'thumbnail' ),
     )
   );
 }

@@ -137,25 +137,35 @@ nav.cat-menu ul li a{
 /*=== HEADRE RESPONSIVE ===*/
 
 header.header-responsive{
-	
-}
-
-.responsive-menu{
 	background: #fff;
 	border-bottom: 5px solid #17B45B;
+	padding-top: 0;
 }
 
-.navbar-brand{
+header.header-responsive .responsive-menu{
+	background: #fff;
+	text-transform: uppercase;
+}
+
+header.header-responsive .navbar-brand{
 	padding: 5px;
 	height: 70px;
 }
 
-.navbar-brand img{
+header.header-responsive .navbar-brand img{
 	height: 100%;
 }
 
+header.header-responsive .navbar-nav li a{
+	padding-top: 28px;
+	padding-bottom: 25px;
+}
 
-
+header.header-responsive .navbar-nav li .sub-menu li a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+}
 
 /*=== FIN HEADRE RESPONSIVE ===*/
 
@@ -238,11 +248,70 @@ section.main{
 
 /*eventos*/
 
-.evento small{
+.evento small, .blog-post small{
 	float: right;
 }
 
 /*fin de eventos*/
+
+/* Inicio Blog*/
+.blog-post{
+	height: 375px;
+	box-shadow: 0 0 5px #888888;
+	padding: 20px;
+	margin-bottom: 30px;
+	position: relative;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+.blog-post-img{
+	height: 300px;
+	overflow: hidden;
+	
+}
+
+.blog-post span{
+	margin-right: 20px;
+	color: #17B45B;
+	font-weight: bold;
+} 
+.blog-post h2{
+	max-width: 60% ;
+	float: left;
+
+}
+
+.blog-post small{
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+.blog-post-img img{
+	object-fit: cover;
+	height: 300px;
+	width: 100vw;
+}
+
+.titulo-blog{
+	position: absolute;
+	bottom: 0;
+	width: calc(100% - 40px);
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+h1 {
+	margin-bottom: 40px; 
+}
+.blog-post span img {
+ 	width: 20px;
+ 	height: 20px;
+	margin-left: 10px;
+}
+
+/*Fin del Blog*/
 
 .credits{
 	margin-top: 30px;
@@ -252,10 +321,22 @@ section.main{
 @media screen and (max-width: 767px){
 
 	header.header-responsive{
-		display: block;
+		display: block !important;
+		text-align: center;
 	}
 
+	.navbar-brand {
+		height: 50px;
+	}
+	.navbar-nav li a{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}	
 
+	.navbar-nav li .sub-menu{
+		border-bottom: 1px solid #17B45B !important;
+		border-top: 1px solid #17B45B !important;
+	}
 
 	section.main{
 		padding-top: 60px;
