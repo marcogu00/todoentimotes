@@ -6,7 +6,7 @@
 	if( have_posts()):
 		while (have_posts()) : the_post();{
 		 }?>
-			<div class="col-xs-12 col-sm-<?php echo $tal; ?> col-md-<?php echo $tal; ?>  col-lg-<?php echo $tal; ?>">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="blog-post">
 					<div class="blog-post-img">
 						<a href="<?php the_permalink(); ?>"><img class="img-responsive" src="<?php echo  wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt=""></a>

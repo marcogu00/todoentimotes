@@ -302,14 +302,28 @@ section.main{
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
 }
+
 h1 {
 	margin-bottom: 40px; 
 }
+
 .blog-post span img {
  	width: 20px;
  	height: 20px;
 	margin-left: 10px;
 }
+
+.articulo-blog small{
+	flo
+}
+
+.img-articulo-blog img{
+	object-fit: cover;
+	height: 500px;
+	width: 100vw; 
+}
+
+
 
 /*Fin del Blog*/
 
