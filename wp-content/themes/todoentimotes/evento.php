@@ -3,16 +3,16 @@
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 		<h1 class="text-center" ><?php the_title(); ?></h1>
 		<?php 
-		$current_category_id = get_cat_id( single_cat_title("",false) );
-		$current_category_slug = get_category($current_category_id);
-		$current_category_slug = $current_category_slug->slug;
-		echo $current_category_slug;
-		$evento= array('post_page'=>4,'offset=>0','orderby'=>'date','order'=>'DESC','post_type'=>'evento','post_status'=>'publish');
+		$evento= array(
+			'post_page' 	=> 4,
+			'offset' 		=> 0,
+			'orderby' 		=> 'date',
+			'order' 		=> 'DESC',
+			'post_type' 	=> 'evento',
+			'post_status'	=>'publish'
+		);
 		$evento_array=new WP_Query($evento);
-
-		if( $evento_array->have_posts()):
-			while ($evento_array->have_posts()) : $evento_array->the_post();{
-			 }?>
+		if( $evento_array->have_posts()): while ($evento_array->have_posts()) : $evento_array->the_post(); ?>
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="blog-post">
 						<div class="blog-post-img">
@@ -30,8 +30,7 @@
 					</div>
 					
 				</div>
-		<?php
-			
+		<?php			
 		    endwhile;
 		else:  ?>
 			no hay publicaciones 

@@ -5,10 +5,18 @@
 		<h1><?php the_title(); ?></h1>
 		<p><?php the_content(); ?></p>
 		<form class="contact-form" action="" method="post">
-			<p class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><input type="text" name="nombre" placeholder="Nombre" required></p>
-			<p class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><input type="email" name="email" placeholder="Email" required></p>
-			<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 "><textarea name="mensaje" placeholder="Mensaje" ></textarea></p>
-			<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12"><input type="submit" value="Enviar"></p> 
+			<p class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<input type="text" name="nombre" placeholder="Nombre" required>
+			</p>
+			<p class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<input type="email" name="email" placeholder="Email" required>
+			</p>
+			<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+				<textarea name="mensaje" placeholder="Mensaje" ></textarea>
+			</p>
+			<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<input type="submit" value="Enviar">
+			</p> 
 		</form>
 		<ul class="redes_sociales text-center">
 			<?php 
@@ -23,8 +31,7 @@
 			<?php
 			$efect++;
 				}
-			?>
-			
+			?>			
 		</ul>
 	</div>
 	<?php endwhile; ?>

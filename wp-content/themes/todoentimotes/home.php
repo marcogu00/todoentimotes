@@ -16,12 +16,7 @@
 				?>
 			</ul>
 		</div>
-
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<?php grid_categories( 4, 'publicacion'); ?>			
-		</div>
-
-
+		
 		<div class="clearfix"></div>
 
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
@@ -31,9 +26,15 @@
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 			<?php 
-			$publicaciones= array('post_page'=>4,'offset=>0','orderby'=>'date','order'=>'DESC','post_type'=>'evento','post_status'=>'publish');
+			$publicaciones= array(
+				'post_page'=>4,
+				'offset' => 0,
+				'orderby'=>'date',
+				'order'=>'DESC',
+				'post_type'=>'publicacion',
+				'post_status'=>'publish'
+				);
 			$publicaciones_array=new WP_Query($publicaciones);
-
 			if( $publicaciones_array->have_posts()):
 				while ($publicaciones_array->have_posts()) : $publicaciones_array->the_post();{
 				 }?>
