@@ -10,9 +10,7 @@
 		</div>
 		<div>
 			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-		</div>
-		<div>
-			<<input type="button" value="ver mas">
+			<a href="single-publicacion.php"> ver mas</a>
 		</div>
 
 		<?php
