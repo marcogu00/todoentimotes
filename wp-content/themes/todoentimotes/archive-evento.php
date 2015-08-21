@@ -3,8 +3,11 @@
 	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
 		<h1 class="text-center" ><?php the_title(); ?></h1>
 		<?php 
-	if( have_posts()):
-		while (have_posts()) : the_post();{
+	$evento= array ('post_page'=>4,'offset=>0','orderby'=>'date','order'=>'DESC','post_type'=>'evento','post_status'=>'publish');
+	$evento_array=new WP_Query($evento);
+
+	if( $evento_array->have_posts()):
+		while ($evento_array->have_posts()) : $evento_array->the_post();{
 		 }?>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<div class="blog-post">
@@ -13,7 +16,12 @@
 					</div>
 						<div class="titulo-blog">
 							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<small><span><?php comments_number('0','1','%'); ?><img src="<?php bloginfo('stylesheet_directory'); ?>/images/comments.png"></span><?php the_date(); ?></small>
+							<small>
+								<span>
+									<iframe src="http://www.facebook.com/plugins/comments.php?href=<?php the_permalink(); ?>&permalink=1" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:16px;" allowTransparency="true"></iframe>
+								</span>
+								<?php the_date(); ?>
+							</small>
 						</div>
 				</div>
 				

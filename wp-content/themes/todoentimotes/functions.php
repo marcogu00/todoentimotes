@@ -81,7 +81,7 @@ function create_post_type_event() {
       ),
         'public' => true,
         'rewrite' => array('slug' => 'evento'),
-        'supports' => array( 'title', 'editor', 'thumbnail', 'sticky-posts' ),
+        'supports' => array( 'title', 'editor', 'thumbnail', 'sticky-posts','comments'),
     )
   );
 }

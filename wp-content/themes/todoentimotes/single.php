@@ -16,9 +16,8 @@
 							<span style="float:right;"><small><?php the_date(); ?></small></span>
 						</div>
 				</div>
-				<?php the_content(); ?>
+				<p style="margin-top:50px;"><?php the_content(); ?></p>
 			</div>
-			<?php get_comment($post->ID); ?>
 	<?php 
 	endwhile; ?>
 </div>
