@@ -12,6 +12,7 @@ function custom_search_form(){
 	<?php
 }
 
+<<<<<<< HEAD
 add_action( 'init', 'create_publicacion_tax' );
 
 function create_publicacion_tax() {
@@ -27,6 +28,8 @@ function create_publicacion_tax() {
 }
 
 add_action( 'init', 'create_post_type' );
+=======
+>>>>>>> d4deea8df20e49c06abc024213387f941459e484
 
 function create_post_type() {
     register_post_type( 'publicacion',
@@ -35,14 +38,21 @@ function create_post_type() {
         'name' => __( 'Publicaciones' ),
         'singular_name' => __( 'Publicacion' )
       ),
+<<<<<<< HEAD
       'taxonomies' => array('category_pub'),
         'public' => true,
         'has_archive' => true,
         'rewrite' => array('slug' => 'publicacion'),
+=======
+      'taxonomies' => array('category'),
+        'public' => true,
+        'has_archive' => true,
+>>>>>>> d4deea8df20e49c06abc024213387f941459e484
         'supports' => array( 'title', 'editor', 'thumbnail' ),
     )
   );
 }
+add_action( 'init', 'create_post_type' );
 
 
 add_theme_support('category-thumbnails');
@@ -85,7 +95,6 @@ function contact_email(){
   
 }
 
-add_action( 'init', 'create_post_type_event' );
 
 function create_post_type_event() {
     register_post_type( 'evento',
@@ -100,5 +109,6 @@ function create_post_type_event() {
     )
   );
 }
+add_action( 'init', 'create_post_type_event' );
 
 ?>
