@@ -1,7 +1,8 @@
 <?php get_header(); ?>
 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-	<h1 class="text-center"><?php the_title(); ?></h1>
+	<h1 class="text-center"><?php get_the_category(); ?>algo</h1>
 	<?php
+
 	if(have_posts()):
 		while (have_posts()) : the_post();{
 		 }?>
