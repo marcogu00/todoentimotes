@@ -12,23 +12,38 @@ function custom_search_form(){
 	<?php
 }
 
+add_action( 'init', 'create_publicacion_tax' );
+
+function create_publicacion_tax() {
+  register_taxonomy(
+    'category_pub',
+    'publicacion',
+    array(
+      'label' => __( 'Categorías(Publicaciones)' ),
+      'rewrite' => array( 'slug' => 'categorias' ),
+      'hierarchical' => true,
+    )
+  );
+}
+
 add_action( 'init', 'create_post_type' );
 
 function create_post_type() {
-  	register_post_type( 'publicacion',
+    register_post_type( 'publicacion',
     array(
       'labels' => array(
         'name' => __( 'Publicaciones' ),
         'singular_name' => __( 'Publicacion' )
       ),
-      'taxonomies' => array('category'),
-      	'public' => true,
-      	'has_archive' => true,
-      	'rewrite' => array('slug' => 'publicacion'),
-      	'supports' => array( 'title', 'editor', 'thumbnail' ),
+      'taxonomies' => array('category_pub'),
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'publicacion'),
+        'supports' => array( 'title', 'editor', 'thumbnail' ),
     )
   );
 }
+
 
 add_theme_support('category-thumbnails');
 

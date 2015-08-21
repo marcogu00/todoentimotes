@@ -30,18 +30,13 @@
 
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
-			<?php
-			$posts_args = array(
-			    'post_type' => 'publicacion',
-			    'post_per_page' => 8
-			    );
+			<?php 
+			$publicaciones= array('post_page'=>4,'offset=>0','orderby'=>'date','order'=>'DESC','post_type'=>'evento','post_status'=>'publish');
+			$publicaciones_array=new WP_Query($publicaciones);
 
-			$posts = get_post($posts_args);
-
-			$posts_query = new WP_Query( $posts );
-
-			if ( $posts_query->have_posts() ) :
-				while ( $posts_query->have_posts() ) : $posts_query->the_post(); ?>
+			if( $publicaciones_array->have_posts()):
+				while ($publicaciones_array->have_posts()) : $publicaciones_array->the_post();{
+				 }?>
 
 					<?php get_template_part( 'content', 'publication' ); ?>
 			    
