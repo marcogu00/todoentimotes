@@ -331,6 +331,62 @@ h1 {
 
 /*Fin del Blog*/
 
+/*=== PUBLICACION ===*/
+
+.galeria-imagenes{
+		padding-top: 15px;
+}
+
+.img_principal{
+	margin-bottom: 15px;
+}
+
+.img_galeria li{
+	height: 50px;
+}
+
+.img_galeria li img{
+	height: 50px;
+	objet-fit:cover;
+}
+
+.img_galeria li:nth-child(even){
+	padding-right: 8px;
+	padding-left: 10px;
+}
+
+.img_galeria li:nth-child(odd){
+	padding-left: 8px;
+	padding-right: 10px;
+}
+
+.img_galeria li:first-child{
+	padding-right: 5px;
+	padding-left: 15px;
+}
+
+.img_galeria li:last-child{
+	padding-left: 5px;
+	padding-right: 15px;
+}
+
+.pub-info{
+	padding-left: 30px;
+	padding-right: 50px;
+}
+
+.pub-info span,
+.pub-info img{
+	margin-right: 15px;
+}
+
+.img_rs{
+	width: 20px;
+	height: 20px;
+}
+
+/*=== END PUBLICACION ===*/
+
 .credits{
 	margin-top: 30px;
 }
