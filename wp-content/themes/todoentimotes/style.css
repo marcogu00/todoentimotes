@@ -122,6 +122,9 @@ nav.cat-menu ul li:last-child{
 nav.cat-menu ul li a{
 	color: #fff !important;
 	font-weight: bold;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	text-transform: uppercase;
 }
 
 
@@ -158,6 +161,10 @@ header.header-responsive .navbar-nav li .sub-menu li a{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	text-align: center;
+}
+
+.cat-menu{
+	min-height: 1px;
 }
 
 /*=== FIN HEADRE RESPONSIVE ===*/
@@ -339,6 +346,13 @@ h1 {
 
 .img_principal{
 	margin-bottom: 15px;
+	height: 250px
+}
+
+.img_principal img{
+	objet-fit:cover;
+	height: 250px;
+	width: 35vw;
 }
 
 .img_galeria li{
@@ -373,6 +387,7 @@ h1 {
 .pub-info{
 	padding-left: 30px;
 	padding-right: 50px;
+	padding-bottom: 15px;
 }
 
 .pub-info span,
@@ -389,6 +404,7 @@ h1 {
 
 .credits{
 	margin-top: 30px;
+	margin-bottom: 30px;
 }
 
 

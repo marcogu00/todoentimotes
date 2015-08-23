@@ -15,9 +15,9 @@
 			</ul>
 		</div>
 		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pub-info">
-			<h1 class="text-center"><?php the_title(); ?></h1>
+			<h1><?php the_title(); ?></h1>
 			<p><?php the_content(); ?></p><br>
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-left:0;">
+			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-left:0;">
 			<?php
 			$direcciones= CFS()->get('direcciones');
 				foreach($direcciones as $dir){?>
@@ -39,7 +39,9 @@
 				<p><img src="<?php echo $red['imagen_red']; ?>" alt="" class="img_rs"><a href="<?php echo $red['enlace']; ?>"><?php echo $red['nombre']; ?></a></p>	
 			<?php }	?>
 			<p><span class="glyphicon glyphicon-globe"></span><a href="<?php echo CFS()->get('pagina_web'); ?>" target="_blanck"><?php echo CFS()->get('pagina_web'); ?></a></p>
-			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+				<?php $locator = CFS()->get('ubicacion'); ?>
 		</div>
 	<?php endwhile; ?>
 <?php get_footer(); ?>
