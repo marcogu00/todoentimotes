@@ -395,12 +395,42 @@ h1 {
 	margin-right: 15px;
 }
 
+.pub-info a{
+	color: #232323;
+}
+
 .img_rs{
 	width: 20px;
 	height: 20px;
 }
 
+#map-canvas {
+	width: 100%;
+
+}
 /*=== END PUBLICACION ===*/
+
+.item-pub{
+	position: relative;
+	height: 300px;
+	margin-bottom: 30px;
+}
+
+.item-pub img{
+	object-fit: cover;
+	width: 30vw;
+	height: 300px;
+}
+
+.pub-nombre{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 15px;
+	background: rgba(0,0,0,0.6);
+	text-transform: capitalize;
+}
 
 .credits{
 	margin-top: 30px;
@@ -415,8 +445,9 @@ h1 {
 		text-align: center;
 	}
 
-	.navbar-brand {
-		height: 50px;
+	header.header-responsive .navbar-brand{
+		height: 55px;
+
 	}
 	.navbar-nav li a{
 	padding-top: 10px;
@@ -430,5 +461,9 @@ h1 {
 
 	section.main{
 		padding-top: 60px;
+	}
+
+	.item-pub img{
+		width: 100vw;
 	}
 }

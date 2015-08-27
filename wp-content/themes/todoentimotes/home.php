@@ -20,7 +20,7 @@
 		<div class="clearfix"></div>
 
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-			<h2>Nuevas Publicaciones</h2>			
+			<h2>Nuevas Publicaciones</h2><br>			
 		</div>
 
 		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

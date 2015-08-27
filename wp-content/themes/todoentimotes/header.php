@@ -11,7 +11,8 @@
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/js/bootstrap.min.js"></script>
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/libs/jquery.bxslider/jquery.bxslider.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/libs/jquery.bxslider/jquery.bxslider.css">
-	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/libs/hovermaster/hover.css">
+	<script src="<?php bloginfo('stylesheet_directory'); ?>/libs/fancybox/jquery.fancybox.pack.js"></script>
+	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/libs/fancybox/jquery.fancybox.css">
 	<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/libs/animate.css">
 	<script src="<?php bloginfo('stylesheet_directory'); ?>/libs/wow.min.js"></script>
 	<script>
@@ -43,6 +44,15 @@
     	    $('.header-responsive').fadeOut();
         }
     });
+	</script>
+	<script>
+		$("a.galeria").fancybox();
+	</script>
+	<script>
+		$(document).ready(function(){
+			var alto = $(".mapa").width();
+			$("#map-canvas").css("height",alto);
+		});
 	</script>
 	<?php wp_head() ?>
 </head>
