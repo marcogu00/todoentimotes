@@ -9,7 +9,14 @@
 					</div>
 					<div class="articulo-blog">
 						<h2><a href="<?php the_permalink(); ?>"></a></h2>
-						<small><?php the_author(); ?></small>
+						<?php if (get_post_type() == 'evento') { ?>
+						<small><?php echo CFS()->get('hora'); ?></small>
+						<?php 
+						}
+						else{ ?>
+							<small><?php the_author(); ?></small>
+						<?php } ?>
+
 						<span style="float:right;"><small><?php the_date(); ?></small></span>
 					</div>
 				</div>

@@ -27,7 +27,12 @@
 						</div>
 							<div class="titulo-blog">
 								<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-								<small><span><?php comments_number('0','1','%'); ?><img src="<?php bloginfo('stylesheet_directory'); ?>/images/comments.png"></span><?php the_date(); ?></small>
+								<small>
+									<span>
+										<iframe src="http://www.facebook.com/plugins/comments.php?href=<?php the_permalink(); ?>&permalink=1" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:130px; height:16px;" allowTransparency="true"></iframe>
+									</span>
+									<?php the_date(); ?>
+								</small>
 							</div>
 					</div>
 					

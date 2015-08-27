@@ -2,7 +2,10 @@
 			<div class="item-pub">
 				<a href="<?php the_permalink(); ?>"><img class="img-responsive" src="<?php echo  wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt=""></a>
 				<div class="pub-nombre">
-					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>				
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<?php if(is_page_template('search.php')) { ?>
+						<p><?php echo get_post_type(74); ?></p>						
+					<?php } ?>				
 				</div>				
 			</div>
 			<a class="btn-green" href="single-publicacion.php"> ver mas</a>

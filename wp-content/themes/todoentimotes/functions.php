@@ -10,6 +10,7 @@ function custom_search_form(){
   <form role="search" method="get" class="custom-search-form" action="<?php echo home_url( '/' ); ?>">
     <input type="search" class="custom-search-field" placeholder="<?php echo esc_attr_x( 'Buscar...', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
     <input type="submit" class="custom-search-submit" value="<?php echo esc_attr_x( 'BUSCAR', 'submit button' ) ?>" />
+    
   </form>
   <?php
 }

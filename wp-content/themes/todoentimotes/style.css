@@ -466,4 +466,54 @@ h1 {
 	.item-pub img{
 		width: 100vw;
 	}
+
+	.blog-post-img {
+		height: 200px;
+	}
+
+	.blog-post-img img {
+		height: 200px;
+	}
+
+	.blog-post h2{
+		max-width: 100%;
+		width: 100%;
+	}
+
+	.blog-post {
+		height: auto;
+		overflow: hidden;
+	} 
+
+	.titulo-blog {
+		position: relative;
+	}
+
+	.blog-post small {
+		float: none;
+	}
+
+	.blog-post small span{
+		display: block;
+		width: 100%;
+	}
+	
+	.img-articulo-blog img {
+		height: 200px;
+	}
+	
+	.img_principal img {
+		width: 100vw;
+	}
+
+	.pub-info {
+		padding: 30px;
+	}
+
+	.mapa {
+		padding: 0px;
+		margin-top: 20px;
+	}
+
 }
+
