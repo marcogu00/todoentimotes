@@ -449,7 +449,7 @@ h1 {
 		height: 55px;
 
 	}
-	.navbar-nav li a{
+	header.header-responsive .navbar-nav li a{
 	padding-top: 10px;
 	padding-bottom: 10px;
 	}	
