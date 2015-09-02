@@ -3,7 +3,7 @@
 		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 galeria-imagenes">
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 img_principal">
 				<a class="galeria" href="<?php echo  wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" rel="group1">
-					<img class="img-responsive" src="<?php echo  wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt="">
+					<img class="img-responsive" src="<?php echo  wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt="<?php the_title(); ?>">
 				</a>
 			</div>
 			<ul class="img_galeria">
@@ -12,7 +12,7 @@
 			foreach ($articulo_img as $ar ) {  ?>
 				<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">	
 					<a href="<?php echo $ar['imagen']; ?>" class="galeria" rel="group1">
-						<img class="img-responsive" src="<?php echo $ar['imagen']; ?>" alt="">								
+						<img class="img-responsive" src="<?php echo $ar['imagen']; ?>" alt="<?php the_title(); ?>">								
 					</a>
 				</li>
 			<?php } ?>

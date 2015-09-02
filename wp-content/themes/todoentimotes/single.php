@@ -5,7 +5,7 @@
 			<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
 				<div>
 					<div class="img-articulo-blog">
-						<a href="<?php the_permalink(); ?>"><img class="img-responsive" src="<?php echo  wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt=""></a>
+						<a href="<?php the_permalink(); ?>"><img class="img-responsive" src="<?php echo  wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>" alt="<?php the_title(); ?>"></a>
 					</div>
 					<div class="articulo-blog">
 						<h2><a href="<?php the_permalink(); ?>"></a></h2>

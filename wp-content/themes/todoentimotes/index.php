@@ -1,31 +1,54 @@
 <?php get_header(); ?>
-<?php $locator = CFS()->get('mapa_experiencia'); ?>
 
-		<script src="https://maps.googleapis.com/maps/api/js"></script>
-	    <script>
-	      function initialize() {
-	        var mapCanvas = document.getElementById('map-canvas');
-	        
-	        var myLatlng = new google.maps.LatLng(<?php echo $locator; ?>);
-	        
-	        var mapOptions = {
-	          center: myLatlng,
-	          zoom: 8,
-	          mapTypeId: google.maps.MapTypeId.ROADMAP
-	        }
-	        var map = new google.maps.Map(mapCanvas, mapOptions)
-	        
-	        var marker = new google.maps.Marker({
-			  position: myLatlng,
-			  map: map
-			});
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content-slide-home">
+			<ul class="home-slider">
+				<?php
+				$imagenesSlide = CFS()->get('imagenes');
+				if ($imagenesSlide) {
+					foreach ($imagenesSlide as $slide) { ?>
+						<li>
+							<img src="echo $slide['imagen'];" alt="" title="<?php $slide['texto']; ?>">
+						</li>
+				<?php
+					}
+				}
+				?>
+			</ul>
+		</div>
+		
+		<div class="clearfix"></div>
 
-	      }
-	      google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
-			
-		<div id="map-canvas"></div>
-			
-	</div>
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+			<h2>Nuevas Publicaciones</h2><br>			
+		</div>
+
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+
+			<?php 
+			$publicaciones= array(
+				'post_page'=>4,
+				'offset' => 0,
+				'orderby'=>'date',
+				'order'=>'DESC',
+				'post_type'=>'publicacion',
+				'post_status'=>'publish'
+				);
+			$publicaciones_array=new WP_Query($publicaciones);
+			if( $publicaciones_array->have_posts()):
+				while ($publicaciones_array->have_posts()) : $publicaciones_array->the_post();{
+				 }?>
+
+					<?php get_template_part( 'content', 'publication' ); ?>
+			    
+			<?php
+			    endwhile;
+			else:
+
+			endif;
+
+			wp_reset_postdata();
+			?>
+
+		</div>
 
 <?php get_footer(); ?>

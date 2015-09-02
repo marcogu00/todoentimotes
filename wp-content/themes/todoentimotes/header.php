@@ -54,6 +54,16 @@
 			$("#map-canvas").css("height",alto);
 		});
 	</script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-53201657-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
 	<?php wp_head() ?>
 </head>
 <body <?php body_class(); ?>>
@@ -62,7 +72,7 @@
 			<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 				<div class="logo">
 					<a href="<?php bloginfo('url'); ?>">
-						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logoTT.png" alt="" class="img-responsive">
+						<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logoTT.png" alt="<?php bloginfo( 'name' ); ?>" class="img-responsive">
 					</a>
 				</div>
 			</div>
@@ -104,7 +114,7 @@
 				    <span class="icon-bar"></span>
 				</button>
 				<a href="<?php bloginfo('url'); ?>" class="navbar-brand">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logoTT.png" alt="" class="img-responsive">
+					<img src="<?php bloginfo('stylesheet_directory'); ?>/images/logoTT.png" alt="<?php bloginfo( 'name' ); ?>" class="img-responsive">
 				</a>
 			</div>
 			<div class="collapse navbar-collapse navbar-responsive-collapse">
