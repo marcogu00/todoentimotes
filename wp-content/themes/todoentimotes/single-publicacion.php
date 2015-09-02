@@ -24,25 +24,38 @@
 			<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-left:0;">
 			<?php
 			$direcciones= CFS()->get('direcciones');
+			if ($direcciones) {
 				foreach($direcciones as $dir){?>
 				<p><span class="glyphicon glyphicon-home"></span><?php echo $dir['direccion']; ?></p>	
-			<?php }	?>
+			<?php }	
+			} ?>
 			<?php
 			$telefonos= CFS()->get('telefonos');
+			if ($telefonos) {
 				foreach($telefonos as $tel){?>
 				<p><span class="glyphicon glyphicon-earphone"></span><?php echo $tel['telefono']; ?></p>	
-			<?php }	?>
+			<?php }	
+			} ?>
 			<?php
 			$correos= CFS()->get('correos');
+			if ($redes_sociales) {
 				foreach($correos as $cor){?>
 				<p><span class="glyphicon glyphicon-envelope"></span><?php echo $cor['correo']; ?></p>	
-			<?php }	?>
+			<?php }	
+			} ?>
 			<?php
 			$redes_sociales= CFS()->get('redes_sociales');
+			if ($redes_sociales) {
 				foreach($redes_sociales as $red){?>
-				<p><img src="<?php echo $red['imagen_red']; ?>" alt="" class="img_rs"><a href="<?php echo $red['enlace']; ?>"><?php echo $red['nombre']; ?></a></p>	
-			<?php }	?>
-			<p><span class="glyphicon glyphicon-globe"></span><a href="<?php echo CFS()->get('pagina_web'); ?>" target="_blanck"><?php echo CFS()->get('pagina_web'); ?></a></p>
+				<p><img src="<?php echo $red['imagen_red']; ?>" alt="" class="img_rs"><a href="<?php echo $red['enlace']; ?>" target="_blanck"> <?php echo $red['nombre']; ?></a></p>	
+			<?php }
+			}	?>
+			<?php 
+			$web = CFS()->get('pagina_web');
+			if ($web) {
+				echo $web; ?>
+				<p><span class="glyphicon glyphicon-globe"></span><a href="<?php echo CFS()->get('pagina_web'); ?>" target="_blanck"><?php echo CFS()->get('pagina_web'); ?></a></p>
+			<?php } ?>
 		</div>
 		<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 mapa">
 			<?php $cfs->get('ubicacion'); ?>

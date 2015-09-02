@@ -182,7 +182,11 @@ section.main{
 /*=== HOME ===*/
 
 .content-slide-home{
-	
+	padding: 15px 30px 30px 30px;
+}
+
+.content-slide-home img{
+	width: 100%;
 }
 
 .category-home-img,

@@ -8,5 +8,5 @@
 					<?php } ?>				
 				</div>				
 			</div>
-			<a class="btn-green" href="single-publicacion.php">ver mas</a>
+			<a class="btn-green" href="<?php the_permalink(); ?>">ver mas</a>
 		</div>

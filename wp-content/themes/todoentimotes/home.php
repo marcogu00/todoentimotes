@@ -8,7 +8,7 @@
 				if ($imagenesSlide) {
 					foreach ($imagenesSlide as $slide) { ?>
 						<li>
-							<img src="echo $slide['imagen'];" alt="" title="<?php $slide['texto']; ?>">
+							<img src="<?php echo $slide['imagen']; ?>" alt="" title="<?php $slide['texto']; ?>">
 						</li>
 				<?php
 					}
