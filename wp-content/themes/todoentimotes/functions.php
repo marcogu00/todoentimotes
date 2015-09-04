@@ -8,9 +8,11 @@ add_theme_support('category-thumbnails');
 function custom_search_form(){
   ?>
   <form role="search" method="get" class="custom-search-form" action="<?php echo home_url( '/' ); ?>">
-    <input type="search" class="custom-search-field" placeholder="<?php echo esc_attr_x( 'Buscar...', 'placeholder' ) ?>" value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>" />
+    <input id="s" type="text" class="custom-search-field" placeholder="Buscar..." name="s" value="" />
     <input type="submit" class="custom-search-submit" value="<?php echo esc_attr_x( 'BUSCAR', 'submit button' ) ?>" />
-    
+    <input type="hidden" name="post_type[]" value="product" />
+    <input type="hidden" name="post_type[]" value="ilustracion" />
+    <input type="hidden" name="post_type[]" value="post" />   
   </form>
   <?php
 }
@@ -94,6 +96,6 @@ function create_post_type_event() {
     )
   );
 }
-add_action( 'init', 'create_post_type_event' );
+add_action( 'init', 'create_post_type_event' ); 
 
 ?>

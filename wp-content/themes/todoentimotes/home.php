@@ -1,7 +1,7 @@
 <?php /*Template Name: Inicio*/ ?>
 <?php get_header(); ?>
 
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 content-slide-home">
+		<div class="hidden-xs col-sm-12 col-md-12 col-lg-12 content-slide-home">
 			<ul class="home-slider">
 				<?php
 				$imagenesSlide = CFS()->get('imagenes');
@@ -27,7 +27,7 @@
 
 			<?php 
 			$publicaciones= array(
-				'post_page'=>4,
+				'posts_per_page' => 6,
 				'offset' => 0,
 				'orderby'=>'date',
 				'order'=>'DESC',

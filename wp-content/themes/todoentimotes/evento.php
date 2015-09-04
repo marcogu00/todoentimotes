@@ -33,7 +33,7 @@
 		<?php			
 		    endwhile;
 		else:  ?>
-			no hay publicaciones 
+			<h3 style="margin:25vh 0; text-align: center;">No hay publicaciones</h3>
 		<?php
 		endif;
 		wp_reset_postdata();

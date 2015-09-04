@@ -72,7 +72,7 @@ header{
 	padding-bottom: 15px;
 }
 
-.custom-search-form input[type=search]{
+.custom-search-form input#s{
 	padding: 5px 10px;
 	border: none;
 	border-bottom: 1px solid #232323;

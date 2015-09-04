@@ -9,13 +9,15 @@
 			<ul class="img_galeria">
 			<?php 
 			$articulo_img= CFS()->get('fotos');
+			if ($articulo_img) {
 			foreach ($articulo_img as $ar ) {  ?>
 				<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3">	
 					<a href="<?php echo $ar['imagen']; ?>" class="galeria" rel="group1">
 						<img class="img-responsive" src="<?php echo $ar['imagen']; ?>" alt="<?php the_title(); ?>">								
 					</a>
 				</li>
-			<?php } ?>
+			<?php } 
+			} ?>
 			</ul>
 		</div>
 		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 pub-info">
