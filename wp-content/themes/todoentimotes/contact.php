@@ -7,11 +7,10 @@
 		<?php 
 		if(isset($_POST['enviar'])) { 
 			$headers = 'From:'.$_POST['nombre'].'<'.$_POST['correo'].'>';
-			$to="contacto@todoentimotes.com.ve";
+			$to="todoentimotes@gmail.com";
 			$mensaje = $_POST['mensaje'];
 			$asunto="Contacto TodoEnTimotes.com.ve";	
-			mail( $to,$asunto,$mensaje, $headers );
-			echo "Mensaje enviado";
+			mail($to,$asunto,$mensaje, $headers);
 		}
 			?>
 		<form class="contact-form" action="<?php bloginfo('url'); ?>/contacto/" method="post">
@@ -19,7 +18,7 @@
 				<input type="text" name="nombre" class="fom-control" placeholder="Nombre" required>
 			</p>
 			<p class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-				<input type="mail" name="correo" class="fom-control" placeholder="Email" required>
+				<input type="email" name="correo" class="fom-control" placeholder="Email" required>
 			</p>
 			<p class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 				<textarea name="mensaje" id="" cols="30" rows="10" class="fom-control" placeholder="Mensaje"></textarea>
